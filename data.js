@@ -32,6 +32,7 @@ const siteData = {
         completed: {
             en: "Completed", "zh-hk": "完成", bn: "সম্পন্ন", ar: "مكتمل", fa: "تکمیل شد", ckb: "تەواوکرا", ur: "مکمل", prs: "تکمیل شد", ro: "Finalizat", ti: "ተዛዚሙ", pl: "Zakończono", cs: "Dokončeno", ps: "بشپړ شو", pt: "Concluído", es: "Completado", fr: "Terminé", sk: "Dokončené", hi: "पूरा हुआ"
         },
+        // 新增：Conversion 頁面嘅標題指示
         check_instruction: {
             en: "Please check below instruction",
             "zh-hk": "請查閱以下指示",
@@ -180,7 +181,7 @@ const siteData = {
     categories: [
         {
             id: 'counciltax',
-            title: { en: 'Council tax', 'zh-hk': '市政稅', bn: 'কাউন্সিল ট্যাক্স', ar: 'ضريبة المجلس', fa: 'مالیات شورا', ckb: 'باجی ئەنجومەن', ur: 'کونسل ٹیکس', prs: 'مالیات شورا', ro: 'Taxa la consiliu', ti: 'Council Tax', pl: 'Podatek lokalny', cs: 'Místní daň', ps: 'د شورا مالیه', pt: 'Imposto Municipal', es: 'Impuesto Municipal', fr: "Taxe d'habitation", sk: 'Miestna daň', hi: 'काउंसिल टैक्स' },
+            title: { en: 'Council tax', 'zh-hk': '市政稅', bn: 'কাউন্সিল ট্যাক্স', ar: 'ضريبة المجلس', fa: 'مالیات شورا', ckb: 'باجی ئەنجومەن', ur: 'کونسل ٹیکس', prs: 'مالیات شورا', ro: 'Taxa la consiliu', ti: 'ግብሪ ቤት ምኽሪ', pl: 'Podatek lokalny', cs: 'Místní daň', ps: 'د شورا مالیه', pt: 'Imposto Municipal', es: 'Impuesto Municipal', fr: "Taxe d'habitation", sk: 'Miestna daň', hi: 'काउंसिल टैक्स' },
             services: [
                 { id: 'ct_discuss', title: { en: 'Discuss council tax bill', 'zh-hk': '討論市政稅帳單', bn: 'কাউন্সিল ট্যাক্স বিল নিয়ে আলোচনা করুন', ar: 'مناقشة فاتورة ضريبة المجلس', fa: 'بررسی قبض مالیات شورا', ckb: 'گفتوگۆکردن لەسەر پسوڵەی باجی ئەنجومەن', ur: 'کونسل ٹیکس بل پر بات کریں', prs: 'بررسی بل مالیات شورا', ro: 'Discutați factura de taxă', ti: 'ብዛዕባ ናይ Council Tax ክሳዕ ምዝርራብ', pl: 'Omówienie rachunku za podatek', cs: 'Konzultace účtu za místní daň', ps: 'د شورا د مالیې بل په اړه خبرې کول', pt: 'Discutir a conta do imposto', es: 'Consultar factura de impuesto municipal', fr: "Discuter de la facture de taxe d'habitation", sk: 'Konzultácia účtu za miestnu daň', hi: 'काउंसिल टैक्स बिल पर चर्चा करें' }, template: 'ticket' },
                 { id: 'ct_print', title: { en: 'Print council tax bill', 'zh-hk': '列印市政稅帳單', bn: 'কাউন্সিল ট্যাক্স বিল প্রিন্ট করুন', ar: 'طباعة فاتورة ضريبة المجلس', fa: 'چاپ قبض مالیات شورا', ckb: 'چاپکردنی پسوڵەی باجی ئەنجومەن', ur: 'کونسل ٹیکس بل پرنٹ کریں', prs: 'چاپ بل مالیات شورا', ro: 'Imprimați factura de taxă', ti: 'Council Tax ዝኽፈል ቢል ምሕታም', pl: 'Wydruk rachunku za podatek', cs: 'Tisk účtu za místní daň', ps: 'د شورا د مالیې بل چاپول', pt: 'Imprimir conta do imposto', es: 'Imprimir factura de impuesto municipal', fr: "Imprimer la facture de taxe d'habitation", sk: 'Vytlačiť účet za miestnu daň', hi: 'काउंसिल टैक्स बिल प्रिंट करें' }, template: 'ticket' },
@@ -204,7 +205,7 @@ const siteData = {
         },
         {
             id: 'counciltenant',
-            title: { en: 'Council tenant', 'zh-hk': '公共房屋租戶服務', bn: 'কাউন্সিল ভাড়াটিয়া', ar: 'مستأجر من المجلس', fa: 'مستاجر شورای شهر', ckb: 'کرێچی ئەنجومەن', ur: 'کونسل کے کرایہ دار', prs: 'مستاجر شورای شهر', ro: 'Chiriaș la consiliu', ti: 'Council Tenant', pl: 'Najemca mieszkania socjalnego', cs: 'Nájemník městského bytu', ps: 'د شورا کرایه دار', pt: 'Inquilino Municipal', es: 'Inquilino municipal', fr: 'Locataire du parc social', sk: 'Nájomca mestského bytu', hi: 'काउंसिल किरायेदार' },
+            title: { en: 'Council tenant', 'zh-hk': '公共房屋租戶服務', bn: 'কাউন্সিল ভাড়াটিয়া', ar: 'مستأجر من المجلس', fa: 'مستاجر شورای شهر', ckb: 'کرێچی ئەنجومەن', ur: 'کونسل کے کرایہ دار', prs: 'مستاجر شورای شهر', ro: 'Chiriaș la consiliu', ti: 'ናይ ቤት ምኽሪ ተኻራያይ', pl: 'Najemca mieszkania socjalnego', cs: 'Nájemník městského bytu', ps: 'د شورا کرایه دار', pt: 'Inquilino Municipal', es: 'Inquilino municipal', fr: 'Locataire du parc social', sk: 'Nájomca mestského bytu', hi: 'काउंसिल किरायेदार' },
             services: [
                 { id: 'cten_balance', title: { en: 'Check rent balance', 'zh-hk': '查詢租金結餘', bn: 'ভাড়ার ব্যালেন্স পরীক্ষা করুন', ar: 'التحقق من رصيد الإيجار', fa: 'بررسی موجودی اجاره', ckb: 'پشکنینی باڵانسی کرێ', ur: 'کرایہ کا بیلنس چیک کریں', prs: 'بررسی موجودی کرایه', ro: 'Verificați soldul chiriei', ti: 'ናይ ክራይ ዝተረፈ ምርኣይ', pl: 'Sprawdź saldo czynszu', cs: 'Kontrola nedoplatků na nájmu', ps: 'د کرایې توازن چیک کول', pt: 'Verificar saldo da renda', es: 'Consultar saldo de alquiler', fr: 'Vérifier le solde du loyer', sk: 'Skontrolovať zostatok nájomného', hi: 'किराये का शेष जांचें' }, template: 'ticket' },
                 { id: 'cten_repair1', title: { en: 'Raise a repair', 'zh-hk': '提出一項維修要求', bn: 'মেরামতের জন্য অনুরোধ করুন', ar: 'طلب إصلاح', fa: 'ثبت درخواست تعمیر', ckb: 'داواکردنی چاککردنەوە', ur: 'مرمت کی درخواست کریں', prs: 'ثبت درخواست ترمیم', ro: 'Solicitați o reparație', ti: 'ሕቶ ጽገና ምቕራብ', pl: 'Zgłoś usterkę', cs: 'Nahlásit opravu', ps: 'د ترمیم غوښتنه کول', pt: 'Solicitar uma reparação', es: 'Solicitar una reparación', fr: 'Demander une réparation', sk: 'Nahlásiť opravu', hi: 'मरम्मत का अनुरोध करें' }, template: 'ticket' },

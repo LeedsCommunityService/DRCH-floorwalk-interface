@@ -32,7 +32,6 @@ const siteData = {
         completed: {
             en: "Completed", "zh-hk": "完成", bn: "সম্পন্ন", ar: "مكتمل", fa: "تکمیل شد", ckb: "تەواوکرا", ur: "مکمل", prs: "تکمیل شد", ro: "Finalizat", ti: "ተዛዚሙ", pl: "Zakończono", cs: "Dokončeno", ps: "بشپړ شو", pt: "Concluído", es: "Completado", fr: "Terminé", sk: "Dokončené", hi: "पूरा हुआ"
         },
-        // 新增：Conversion 頁面嘅標題指示
         check_instruction: {
             en: "Please check below instruction",
             "zh-hk": "請查閱以下指示",

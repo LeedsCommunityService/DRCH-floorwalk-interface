@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-language Interface | Leeds.gov.uk</title>
+    <title>Language Selection - Leeds City Council</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
     
     <div class="header-middle">
         <div class="header-inner">
-            Multi-language Interface
+            English
         </div>
     </div>
     
@@ -30,7 +30,7 @@
 
 <main class="container">
     <div id="lang-grid" class="grid">
-        <!-- JS 將自動產生按鈕 -->
+        <!-- JS 將自動產生並排序按鈕 -->
     </div>
 </main>
 
@@ -38,7 +38,10 @@
 <script>
     const grid = document.getElementById('lang-grid');
     
-    siteData.languages.forEach(lang => {
+    // 複製語言清單並按英文名稱 (A-Z) 排序
+    const sortedLanguages = [...siteData.languages].sort((a, b) => a.en.localeCompare(b.en));
+    
+    sortedLanguages.forEach(lang => {
         // 首頁不需要顯示英文選項
         if (lang.code === 'en') return; 
 
